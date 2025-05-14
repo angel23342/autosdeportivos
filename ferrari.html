@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari SF90 Stradale</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #e50914;
+    }
+
+    header p {
+      color: #bbb;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h2 {
+      color: #e50914;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      color: #ccc;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: transparent;
+      border: 1px solid #e50914;
+      color: #e50914;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e50914;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ferrari SF90 Stradale</h1>
+    <p>Potencia híbrida, tecnología de Fórmula 1 y elegancia italiana.</p>
+  </header>
+
+  <div class="container">
+    <img src="img/AUTO4.jpg" alt="Ferrari SF90 Stradale" />
+    <div class="text-content">
+      <h2>Características Principales</h2>
+      <ul>
+        <li><strong>Motorización:</strong> V8 biturbo de 4.0 litros + 3 motores eléctricos</li>
+        <li><strong>Potencia total:</strong> 1.000 CV (986 hp)</li>
+        <li><strong>Aceleración 0-100 km/h:</strong> 2,5 segundos</li>
+        <li><strong>Velocidad máxima:</strong> 340 km/h</li>
+        <li><strong>Transmisión:</strong> DCT de 8 velocidades</li>
+        <li><strong>Autonomía eléctrica:</strong> hasta 25 km</li>
+        <li><strong>Tracción:</strong> Total (AWD)</li>
+        <li><strong>Modos de conducción:</strong> eDrive, Hybrid, Performance, Qualify</li>
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <h2>Diseño y Tecnología</h2>
+    <p>
+      Su aerodinámica activa, líneas agresivas y tecnología derivada de la Fórmula 1 convierten al SF90 Stradale en un referente absoluto del rendimiento moderno. El interior ofrece una experiencia digital inmersiva con una pantalla curva de 16 pulgadas y controles táctiles integrados en el volante.
+    </p>
+
+    <h2>Dimensiones</h2>
+    <ul>
+      <li><strong>Largo:</strong> 4.710 mm</li>
+      <li><strong>Ancho:</strong> 1.972 mm</li>
+      <li><strong>Alto:</strong> 1.186 mm</li>
+      <li><strong>Peso en seco:</strong> 1.570 kg</li>
+    </ul>
+
+    <a href="index.html" class="button">← Volver a la galería</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Autos Deportivos. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
