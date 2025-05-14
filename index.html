@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autos Deportivos</title>
+  <meta name="description" content="Explora los modelos más rápidos y lujosos del mundo, como el Ferrari SF90, Lamborghini Aventador y Porsche 911.">
+  <meta name="author" content="Tu Nombre o Marca" />
+  <meta property="og:title" content="Autos Deportivos" />
+  <meta property="og:image" content="img/AUTO1.jpg" />
+  <meta property="og:description" content="Explora los modelos más rápidos y lujosos del mundo." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #e50914;
+    }
+
+    header p {
+      color: #bbb;
+      font-size: 1.1rem;
+    }
+
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .car {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+    }
+
+    .car img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .car-content {
+      padding: 20px;
+    }
+
+    .car h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #e50914;
+    }
+
+    .car p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .button {
+      margin-top: 20px;
+      display: inline-block;
+      background: transparent;
+      border: 1px solid #e50914;
+      color: #e50914;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+
+    .button:hover {
+      background-color: #e50914;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Autos Deportivos</h1>
+    <p>Explora los modelos más rápidos y lujosos del mundo.</p>
+  </header>
+
+  <section class="cars">
+    <div class="car">
+      <a href="ferrari.html">
+        <img src="img/AUTO1.jpg" alt="Ferrari SF90 Stradale">
+        <div class="car-content">
+          <h2>Ferrari SF90 Stradale</h2>
+          <p>Un híbrido potente con 986 HP que redefine la velocidad y la elegancia.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="car">
+      <a href="lamborghini.html">
+        <img src="img/AUTO2.jpg" alt="Lamborghini Aventador SVJ">
+        <div class="car-content">
+          <h2>Lamborghini Aventador SVJ</h2>
+          <p>Motor V12 brutal con 770 HP y una presencia que impone respeto.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="car">
+      <a href="porsche.html">
+        <img src="img/AUTO3.webp" alt="Porsche 911 Turbo S">
+        <div class="car-content">
+          <h2>Porsche 911 Turbo S</h2>
+          <p>Tradición alemana con ingeniería moderna. Elegancia y precisión en cada curva.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <button class="button" onclick="alert('Gracias por visitar!')">Explorar más</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Autos Deportivos. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
